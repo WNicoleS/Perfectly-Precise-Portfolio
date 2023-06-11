@@ -1,0 +1,36 @@
+/* About Me, Work, Contact Me, Resume */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/tim-mossholder-SgPgLrDqPcU-unsplash.jpg");
+    background-size: cover;
+}
+
+header {
+    color:aliceblue;
+    background-color: #4e4e4e61;
+    padding: 20px;
+}
+
+header h1 {
+}
+
+nav {
+    float: right;
+}
+
+a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+article {
+    color:aliceblue;
+}
+
+footer {
+}
