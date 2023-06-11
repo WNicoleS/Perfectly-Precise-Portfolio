@@ -1,36 +1,108 @@
-/* About Me, Work, Contact Me, Resume */
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-image: url("../images/tim-mossholder-SgPgLrDqPcU-unsplash.jpg");
+    background-image: url("../images/micheile-henderson-Ufqx6Ekf1mQ-unsplash.jpg");
     background-size: cover;
 }
 
+/*Applies to header and navigation elements*/
 header {
     color:aliceblue;
-    background-color: #4e4e4e61;
-    padding: 20px;
-}
+    background-color: #1a1a1a;
+    padding: 25px;
+    text-align: center;
+}         
 
+/*'Portfolio' in header*/
 header h1 {
+    margin-bottom: 10px;
 }
 
-nav {
-    float: right;
-}
+/*Applies to 'About Me', 'Work', 'Resume', and 'Contact Me' links in header*/
+nav {             
+    text-align: center;                                                                                                                   
+}              
 
+/*Links in header*/
 a {
     color:aliceblue;
+    background-color: #1a1a1a;
     text-decoration: none;
+    border: 1.5px solid;
+    padding: 0.5rem;
+    transition-duration: 1s;
 }
 
-article {
+/*Results in links in header changing color when hovered over*/
+a:hover {
+    color: #1a1a1a;
+    background-color: aliceblue;
+}
+
+
+/*Applies to 'welcome' area on front page*/
+section {
     color:aliceblue;
+    background-size:cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 300px;
+}
+
+/*Applies to about me, work, and resume regions*/
+article {
+    color:rgba(240, 248, 255, 0);
+    background-size:cover;
+}
+
+#about-me {
+    background-color: #1a1a1a00;
+    height: 630px;
+    transition-duration: 1.5s;
+    
+}
+
+#about-me:hover {
+    color: aliceblue;
+    background-color: #1a1a1a53;
+    
+}
+
+#work { 
+    background-color: #1a1a1a00;
+    height: 630px;
+    transition-duration: 1.5s;
+}
+
+#work:hover {
+    color: aliceblue;
+    background-color: #1a1a1a53;
+    
+}
+
+#resume {
+    background-color: #1a1a1a00;
+    height: 630px;
+    transition-duration: 1.5s;
+}
+
+#resume:hover {
+    color: aliceblue;
+    background-color: #1a1a1a53;
+    
+}
+
+#contact-me {
+    height: 500;
 }
 
 footer {
+    color:aliceblue;
+    background-color: #1a1a1a;
+    padding: 30px;
 }
