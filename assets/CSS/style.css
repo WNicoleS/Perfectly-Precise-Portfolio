@@ -119,6 +119,7 @@ article {
 #num3 {
     color: rgb(46, 46, 46);
     font-weight: bolder;
+    text-decoration: none;
     text-align: center;
     padding: 100px;
     position: relative;
