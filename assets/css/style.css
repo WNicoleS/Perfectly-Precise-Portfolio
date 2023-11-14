@@ -1,0 +1,12 @@
+/*Applies to everything from the body and to the footer elements*/
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: blue;
+}
+
+body {
+    background-image: url("../images/micheile-henderson-Ufqx6Ekf1mQ-unsplash.jpg"); /*Image of orange lily of the valley*/
+    background-size: cover;
+}
