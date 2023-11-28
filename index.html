@@ -5,54 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans:regular,500,600,700,italic,500italic,600italic,700italic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline:regular" rel="stylesheet" />
   <title>Perfectly Precise Portfolio</title>
 </head>
 
 <body>
-    <header class="mountains">
-        <h1>Perfectly Precise</h1>
-            <nav>
-                <a href="#about-me">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#resume">Resume</a>
-                <a href="#contact">Contact Me</a>
-            </nav>
-
+    
+    <header>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
         <section id="welcome">
-            <h2>welcome</h2>
-        </section>     
+            <svg viewBox="0 0 450 150">
+                <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                <text width="450">
+                  <textPath xlink:href="#curve">
+                    Welcome.
+                  </textPath>
+                </text>
+              </svg>
+        </section>        
     </header>
     
-    <article id="about-me" >
-        <h3>Hello, my name is Whitney Steen.</h3>
+    <article id="about-me">
+        <h2>Hello, my name is Whitney Steen.</h2>
         <img src="" alt="image of author of site">
         <p>I enjoy combining coding and desgin.</p>
     </article>
+
     <article id="work">
-        <h3>Work</h3>
+        <h2>Work</h2>
         <div class="projects">
             <a id="proj-1" href="https://jif945.github.io/Project_1/">Super Shopper</a>
             <a id="proj-2" href="https://salty-reaches-51385-c76877b9c210.herokuapp.com/">Harmony Hub</a>
-            <a id="proj-3" href="#example-3">example 3</a>
+            <a id="proj-3" href="https://roam-ready-79c746e8ffc3.herokuapp.com/">Roam Ready</a>
         </div>    
     </article>
 
-    <div class="">
-        <article id="resume">
-            <h3>Resume</h3>
-            <a>Resume</a>
-        </article>
-        <section id="contact">
-            <h3>Stay in Touch</h3>
-            <p>portfolio@example.com</p>
-        </section>
-    </div>
+    <article id="resume">
+        <h2>Resume</h2>
+        <a href="">Follow Me</a>
+    </article>
+
+    <article id="contact">
+        <h2>Stay in Touch</h2>
+        <p>portfolio@example.com</p>
+    </article>
 </body>
 
-<footer class="">
+<footer>
     <div class="icons">
-        <a class="linkedin" href="#linkedin"><img src="" alt="linkedin icon"></a>
-        <a class="icons" href="#github"><img src="" alt="github icon"></a>
-        <a class="icons" href="#pinterest"><img src="" alt="pinterest icon"></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/whitney-steen-096764297/"><img src="./assets/images/LI-In-Bug.png" alt="linkedin icon"></a>
+        <a id="github" href="https://github.com/WNicoleS?tab=repositories"><img src="./assets/images/github-mark-white.svg" alt="github icon"></a>
     </div>
 </footer>

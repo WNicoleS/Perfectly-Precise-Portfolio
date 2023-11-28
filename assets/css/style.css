@@ -2,34 +2,91 @@
 * {
     margin: 0;
     scroll-behavior: smooth;
+    color: rgb(222, 208, 204);    
 }
 
-a {
-    text-decoration: none;
+body,
+#welcome {
+    background-image: url('../images/annie-spratt-j_Tjo9ID67M-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
 }
 
-header {
-    color: whitesmoke;
+nav,
+#welcome {
     text-align: center;
 }
 
-.mountains {
-    background-image: url("/assets/images/aniket-deole-M6XC789HLe8-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+header,
+footer {
+    /*background-image: linear-gradient(to bottom, rgb(17, 17, 17), rgb(17, 17, 17));*/
+    background-image: url('../images/jon-moore-HVAvrkBiNrM-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3%;
+}
+
+header a {
+    font-family: Expletus Sans;
+    font-size: 25px;  
+    padding: 1% 5% 1% 5%;
+    transition: 1s;
+}
+
+header a:hover {
+    color: rgb(236, 212, 171);
+    text-shadow: 1px 0.5px 5px rgb(255, 226, 226);
+    border: 6px double rgb(165, 88, 88);
+    padding: 1% 6% 2% 6%;
+    margin: 0% 1% 0% 1%;
+}
+
+nav {
+    margin-bottom: 2%;
+}
+
+a {
+  
+    text-decoration: none;
+}
+
+path {
+    fill: transparent;
+}
+
+article {
+    padding: 25%;
 }
 
 #welcome {
-    padding: 40%;
+    fill: rgb(194, 180, 176);
+    font-family: Fascinate Inline;
+    font-size: 100px;
+    font-variant: small-caps;
+    text-shadow: 5px 5px 5px rgb(12, 12, 12);
+    padding: 15%;
 }
 
-#about-me {
-    background-image: linear-gradient(to bottom, pink, blue);
+#welcome,
+#work,
+#contact {
+    border: 8px double rgb(165, 88, 88);      
 }
 
 #about-me,
+#resume {
+    background-image: radial-gradient(rgb(46, 59, 29) 30%, rgb(22, 28, 14) 70%);
+}
+
 #work,
-#resume,
 #contact {
-    padding: 20%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.489), rgba(0, 0, 0, 0.489));    
+}
+
+#linkedin {
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
 }
