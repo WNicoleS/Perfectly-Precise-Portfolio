@@ -12,15 +12,9 @@ body,
     background-attachment: fixed; 
 }
 
-nav,
-#welcome {
-    text-align: center;
-}
-
 header,
 footer {
-    /*background-image: linear-gradient(to bottom, rgb(17, 17, 17), rgb(17, 17, 17));*/
-    background-image: url('../images/jon-moore-HVAvrkBiNrM-unsplash.jpg');
+    background-image: url('../images/annie-spratt-j_Tjo9ID67M-unsplash.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 3%;
@@ -36,12 +30,14 @@ header a {
 header a:hover {
     color: rgb(236, 212, 171);
     text-shadow: 1px 0.5px 5px rgb(255, 226, 226);
-    border: 6px double rgb(165, 88, 88);
+    /*border: 6px double rgb(165, 88, 88);
     padding: 1% 6% 2% 6%;
-    margin: 0% 1% 0% 1%;
+    margin: 0% 1% 0% 1%;*/
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: 2%;
 }
 
@@ -64,7 +60,15 @@ article {
     font-size: 100px;
     font-variant: small-caps;
     text-shadow: 5px 5px 5px rgb(12, 12, 12);
+    text-align: center;
     padding: 15%;
+}
+
+#resume div,
+#contact div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #welcome,
@@ -81,9 +85,6 @@ article {
 #work,
 #contact {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.489), rgba(0, 0, 0, 0.489));    
-}
-
-#linkedin {
 }
 
 .icons {
