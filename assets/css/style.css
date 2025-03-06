@@ -1,261 +1,42 @@
-/*Applies to everything from the header to the footer elements*/
+
 * {
-    margin: 0;
-    color: rgb(222, 208, 204);   
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    color: aliceblue;
 }
 
-/*Applies to background of entire body and "Welcome" header*/
-body,
-#welcome {
-    background-image: url('../images/annie-spratt-j_Tjo9ID67M-unsplash.jpg');
-    background-size: cover;
-    background-attachment: fixed; 
-}
-
-/*Allows page to snap to the header, footer, and articles when near them*/
-header,
-#about-me,
-#work,
-#resume,
-#contact,
-footer {
-    scroll-snap-align: center;
-}
-
-/*Applies to background and padding of header and footer*/
-header,
-footer {
-    background-image: url('../images/annie-spratt-j_Tjo9ID67M-unsplash.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 3%;
-}
-
-/*Applies to "About Me", "Work", "Resume", and "Contact" links in header*/
-header a {
-    font-family: Expletus Sans;
-    font-size: 25px;  
-    padding: 1% 5% 1% 5%;
-    transition: 1s;
-}
-
-/*Applies to change of color of links in header*/
-header a:hover {
-    color: rgb(236, 212, 171);
-    text-shadow: 1px 0.5px 5px rgb(255, 226, 226);
-}
-
-/*Applies to links in header*/
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2%;
-}
-
-/*Applies to all links on page*/
 a {
     text-decoration: none;
 }
 
-/*Applies to color of "Welcome" in header*/
-path {
-    fill: transparent;
+nav a,
+.welcome {
+    text-shadow: 2px 2px 4px #000000;
 }
 
-/*Applies to about-me, work, resume, and contact articles*/
-article {
-    padding: 25%;
+#video {
+    position: fixed;
+    /*object-fit: cover;*/
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 
-/*Applies to about-me, "Work", "Resume", and "Stay in Touch" headers*/
-h2 {
-    font-family: Fascinate;    
-    font-size: 100px;
-    text-align: center;
+nav a {
+    font-family: Architects Daughter;
 }
 
-/*Applies to shadow on text in header, header 2 and paragraphs*/
-h2,
-p,
-#welcome {
-    text-shadow: 5px 5px 5px rgb(12, 12, 12);
+nav a:hover {
+    text-decoration: underline wavy rgb(161, 50, 19);
 }
 
-/*Applies to "Welcome" text on text path*/
-#welcome {
-    fill: rgb(194, 180, 176);
-    font-family: Fascinate Inline;
-    font-size: 100px;
-    font-variant: small-caps;
-    text-align: center;
-    padding: 15%;
+.welcome {
+    font-family: Sonsie One; /*Warnes, Sonsie One, Bershire Swash*/
+    font-size: larger;    
+    margin-top: 30%;
+    margin-left: 5%;
 }
 
-/*Creates a gap between h2, img, and p in about me article*/
-#about-me div {
-    gap: 50px;
-}
-
-/*Applies to "Work" header in work article*/
-#work h2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8%;
-}
-
-/*Applies to projects in work article*/
-#work div {   
-    display: flex;
-    justify-content: space-evenly;
-    gap: 5%;
-}
-
-/*Applies to links in work article*/
-#work a {
-    color: rgb(207, 188, 194);
-    font-family: Expletus Sans;
-    font-size: 45px;
-    text-shadow: 5px 0.5px 5px rgb(26, 19, 19);
-    border: 5px solid rgb(198, 106, 106);
-    padding: 20%;
-}
-
-/*Applies to Supper Shopper background*/
-#proj-1 {
-    background-image: url('../images/supper-shopper.JPG');
-}
-
-/*Applies to Harmony Hub background*/
-#proj-2 {
-    background-image: url('../images/harmony-hub.png');
-}
-
-/*Applies to Roam Ready background*/
-#proj-3 {
-    background-image: url('../images/roam-ready.png');
-}
-
-/*Applies to paragraph and image in about me article*/
-#about-me p,
-#about-me img {
-    font-family: Expletus Sans;
-    font-size: 40px;
-}
-
-/*Applies to resume and contact divisons*/
-#resume div,
-#contact div {
-    gap: 90px;
-}
-
-/*Applies to "Follow Me" link in resume and email in contact*/
-#resume a,
-#contact p {
-    font-family: Expletus Sans;
-    font-size: 45px;
-    transition: 1.5s;
-}
-
-/*Applies to the color change when the "Follow Me!" and email are hovered over*/
-#resume a:hover,
-#contact p:hover {
-    color: rgb(236, 212, 171);
-    text-shadow: 1px 0.5px 5px rgb(255, 226, 226);
-} 
-
-/*Applies to green background of about me and resume articles*/
-#about-me,
-#resume {
-    background-image: radial-gradient(rgb(46, 59, 29) 30%, rgb(22, 28, 14) 70%);
-}
-
-/*Applies to tint over work and contact articles*/
-#work,
-#contact {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.489), rgba(0, 0, 0, 0.489));    
-}
-
-/*Applies to pink borders of "Welcome" header, work and contact articles*/
-#welcome,
-#work,
-#contact {
-    border: 8px double rgb(165, 88, 88);      
-}
-
-/*Applies to flex of about me, resume, and contact divions*/
-#about-me div,
-#resume div,
-#contact div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-/*Applies to background of projects*/
-#proj-1,
-#proj-2,
-#proj-3 {
-    background-size: cover;
-    opacity: 50%;
-    transition: 1s;
-}
-
-/*Make images more visible of projects*/
-#proj-1:hover,
-#proj-2:hover,
-#proj-3:hover {
-    opacity: 100%;
-}
-
-/*Applies to linkedin and github logos in footer*/
-.icons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-@media only screen and (max-width: 912px) {
-    h2 {
-        font-size: 50px;
-    }
-
-    a,
-    p {
-        text-align: center;
-    }
-
-    #proj-1,
-    #proj-2 {
-        margin-bottom: 5%;
-    }
-
-    .projects {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    nav a {
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    #work a {
-        color: rgb(228, 218, 218);
-        font-size: 20px;
-        opacity: 100%;
-        text-shadow: 1.5px 2px 2px black;
-    }
-
-    #resume a {
-        font-size: 25px;
-    }
-
-    #contact p {
-        font-size: 20px;
-    }
+main {
+    background-image: linear-gradient(rgba(21, 21, 21, 0.057) 5%, rgba(21, 21, 21, 0.751) 35%, rgb(21, 21, 21) 60%);
+    margin-top: 15%;
 }
