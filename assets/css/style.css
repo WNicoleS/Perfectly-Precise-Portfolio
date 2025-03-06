@@ -1,19 +1,22 @@
-
+/*Affects the entire webpage*/
 * {
     scroll-behavior: smooth;
     color: aliceblue;
 }
 
+/*Affects all links on the page*/
 a {
     text-decoration: none;
 }
 
+/*Affects links in the navigation tag and h1 tag in the header*/
 nav a,
 .welcome {
     text-shadow: 2px 2px 4px #000000;
 }
 
-#video {
+/*Affects video tag*/
+video {
     position: fixed;
     /*object-fit: cover;*/
     top: 0;
@@ -21,6 +24,7 @@ nav a,
     z-index: -1;
 }
 
+/*Affects the links in the navigation*/
 nav a {
     font-family: Architects Daughter;
 }
@@ -29,14 +33,29 @@ nav a:hover {
     text-decoration: underline wavy rgb(161, 50, 19);
 }
 
+/*Affects the h1 tag in the header*/
 .welcome {
-    font-family: Sonsie One; /*Warnes, Sonsie One, Bershire Swash*/
+    font-family: Berkshire Swash; /*Sonsie One, Berkshire Swash*/
     font-size: larger;    
     margin-top: 30%;
     margin-left: 5%;
 }
 
+/*Adds style to the four articles of the page*/
 main {
-    background-image: linear-gradient(rgba(21, 21, 21, 0.057) 5%, rgba(21, 21, 21, 0.751) 35%, rgb(21, 21, 21) 60%);
+    background-color: rgb(21, 21, 21);
+    border-top: 10px solid rgb(96, 31, 17);    
     margin-top: 15%;
+}
+
+#about-me span {
+    font-family: La Belle Aurore; /*Homemade Apple, Stalemate, La Belle Aurore, Liu Jian Mao Cao*/
+    font-size: 40px;
+}
+
+#about-me,
+#work,
+#resume,
+#contact {
+    padding: 5%;
 }
