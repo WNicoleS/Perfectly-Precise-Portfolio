@@ -79,3 +79,9 @@ main {
 footer {
     background-color: rgb(96, 31, 17);
 }
+
+footer a {
+    position: relative;
+    left: 45%;
+    right: 45%;
+}
