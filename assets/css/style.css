@@ -60,28 +60,58 @@ button:hover {
 /*Adds style to the four articles of the page*/
 main {
     background-color: rgb(21, 21, 21);
-    border-top: 0.5rem solid rgb(96, 31, 17);    
+    border-top: 0.5rem solid rgb(96, 31, 17); 
     margin-top: 15%;
+    right: 0;
+    left: 0;
 }
 
+#about-me div {
+    background-color: blue;
+}
+
+#work div {
+    background-color: orange;
+}
+
+#resume div {
+    background-color: pink;
+}
+
+/*Applies to 'Whitney Steen' in the h2 tag*/
 #about-me span {
     font-family: La Belle Aurore; /*Homemade Apple, Stalemate, La Belle Aurore, Liu Jian Mao Cao*/
     font-size: 40px;
 }
 
-#about-me,
+/*Applies to image of author of the site*/
+/*#about-me img {
+    position: absolute;
+    border: 0.5rem solid rgb(96, 31, 17); 
+    border-top: 0rem;
+    width: 20%;
+}
+
+#about-me h2,
+#about-me p {
+    float: right;
+}*/
+
 #work,
 #resume,
 #contact {
-    padding: 5%;
 }
 
 footer {
     background-color: rgb(96, 31, 17);
+    bottom: 0;
 }
 
 footer a {
     position: relative;
     left: 45%;
     right: 45%;
+}
+
+footer img {
 }
